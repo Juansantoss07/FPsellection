@@ -287,3 +287,50 @@ section {
 
 
 }
+
+
+/* Mobile */
+@media(max-width:1024px){
+    body {
+        & header {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            & nav {
+                display: none;
+            }
+        }
+
+        & .container {
+            overflow: hidden;
+            & .list {
+                width: 100vw;
+                & .item {
+                    & .car-image {
+                        top: 80%;
+                        transform: translateY(-80%);
+                        width: 100%;
+                    }
+
+                    & .content {
+                        justify-content: flex-start;
+                        top: 5%;
+                        transform: translateY(5%);
+                        width: 100%;
+                        left: 0;
+                        right: 0;
+                        align-items: center;
+
+                        & .description {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            & .indicators {
+                top: 70%;
+            }
+        }
+    }
+}
